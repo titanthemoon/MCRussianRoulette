@@ -1,0 +1,6 @@
+name: MCRussianRoulette
+version: '${version}'
+main: io.github.titanthemoon.mcrussianroulette.MCRussianRoulette
+api-version: 1.17
+authors: [ titanthemoon ]
+description: Add russian roulette to your minecraft server!
