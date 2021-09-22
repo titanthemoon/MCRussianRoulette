@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 public class Items {
+
     public void giveItem(ItemStack item, Player user)  {
         if (user.getInventory().firstEmpty() == -1) {
             Location loc = user.getLocation();
@@ -16,4 +17,6 @@ public class Items {
             user.getInventory().addItem(item);
         }
     }
+
+    
 }
