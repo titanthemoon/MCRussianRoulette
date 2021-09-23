@@ -24,7 +24,7 @@ public class RRBowFireListener implements Listener {
                         // Spin the Barrel
                         if (Math.floor(Math.random() * 6) != 1) {
                             proj.remove();
-                            Items.giveItem(new ItemStack(Material.ARROW, 1), shooter);
+                            Items.giveItem(new ItemStack(Material.ARROW), shooter);
                         }
                     }
         }
