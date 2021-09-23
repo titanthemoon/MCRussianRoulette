@@ -6,7 +6,7 @@ Play Russian Roulette on your Minecraft Server, with brand new gamemodes!
  ### /russianroulette  
 >### Description:
 > The main command for Minecraft Russian Roulette  
-> ###Usage:  
+> ### Usage:  
 > /russianroulette [COMMAND] [PLAYERS]  
 > [COMAMND] is the command that will be exectuted (EX: getbow)  
 > [PLAYERS] are any other players
