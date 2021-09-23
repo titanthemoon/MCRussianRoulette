@@ -1,6 +1,11 @@
 # MCRussianRoulette
 
 Play Russian Roulette on your Minecraft Server, with brand new gamemodes!
+
+## Bugs:
+
+Please Report Bugs in the Issues tab with a log!
+
 ## Commands:
 
  ### /russianroulette  
