@@ -15,7 +15,7 @@ import java.util.List;
 
 public class Items {
 
-    public void giveItem(ItemStack item, Player user)  {
+    public static void giveItem(ItemStack item, Player user)  {
         if (user.getInventory().firstEmpty() == -1) {
             Location loc = user.getLocation();
             World world = user.getWorld();
@@ -26,7 +26,7 @@ public class Items {
         }
     }
 
-    public ItemStack getRussianRouletteBow() {
+    public static ItemStack getRussianRouletteBow() {
 
         ItemStack rrBow = new ItemStack(Material.BOW);
         ItemMeta rrBowMeta = rrBow.getItemMeta();

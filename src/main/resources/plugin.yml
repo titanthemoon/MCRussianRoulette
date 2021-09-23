@@ -4,3 +4,7 @@ main: io.github.titanthemoon.mcrussianroulette.MCRussianRoulette
 api-version: 1.17
 authors: [ titanthemoon ]
 description: Add russian roulette to your minecraft server!
+commands:
+  getrrbow:
+    description: Get a Russian Roulette Bow
+    usage: /getrrbow [PLAYERS]
