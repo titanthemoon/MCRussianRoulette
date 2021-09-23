@@ -17,7 +17,7 @@ Play Russian Roulette on your Minecraft Server, with brand new gamemodes!
 ### /getrrbow
 >### Description:
 > Get a Russian Roulette Bow
-> ### Usage
+> ### Usage:
 > /getrrbow [PLAYERS]
-> ### Examples
+> ### Examples:
 > /getrrbow titanthemoon
