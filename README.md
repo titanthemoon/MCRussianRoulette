@@ -1,6 +1,6 @@
-# MCRussianRoulette
+# Minecraft Russian Roulette
 
-Play Russian Roulette on your Minecraft Server, with brand new gamemodes!
+Play Russian Roulette in Block Game! With all new gamemodes!
 
 ## Bugs:
 
