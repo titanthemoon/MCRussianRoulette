@@ -1,4 +1,4 @@
-# Block Game Russian Roulette
+# Minecraft Russian Roulette
 
 Play Russian Roulette in Block Game! With all new gamemodes!
 
