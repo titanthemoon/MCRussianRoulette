@@ -7,5 +7,7 @@ description: Add russian roulette to your minecraft server!
 commands:
   getrrbow:
     description: Get A Russian Roulette Bow
-  russianroulette:
-    description: The main command for Russian Roulette
+    permission: russianroulette.getrrbow
+  getrrkit:
+    description: Get a randomized pvp kit
+    permission: russianroulette.getkit
