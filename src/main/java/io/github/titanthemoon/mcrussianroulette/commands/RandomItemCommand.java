@@ -15,7 +15,7 @@ public class RandomItemCommand implements CommandExecutor {
 
         Player player = (Player) sender;
 
-        int[] randomNum = new int[11];
+        int[] randomNum = new int[12];
 
         for (int i = 0; i < randomNum.length; i++) {
             randomNum[i] = (int) Math.floor(Math.random() * 6);
@@ -68,11 +68,11 @@ public class RandomItemCommand implements CommandExecutor {
         // More Yandere Dev Moments
         if (randomNum[4] == 0 || randomNum[4] == 1) {
             Items.giveItem(new ItemStack(Material.LEATHER_HELMET), player);
-        } else if (randomNum[3] == 2 || randomNum[3] == 3) {
+        } else if (randomNum[4] == 2 || randomNum[3] == 3) {
             Items.giveItem(new ItemStack(Material.IRON_HELMET), player);
-        } else if (randomNum[3] == 4) {
+        } else if (randomNum[4] == 4) {
             Items.giveItem(new ItemStack(Material.DIAMOND_HELMET), player);
-        } else if (randomNum[3] == 5) {
+        } else if (randomNum[4] == 5) {
             Items.giveItem(Items.getGodHelmet(), player);
         }
 
@@ -145,6 +145,15 @@ public class RandomItemCommand implements CommandExecutor {
                 break;
             case (5):
                 Items.giveItem(new ItemStack(Material.ENCHANTED_GOLDEN_APPLE, 64), player);
+                break;
+        }
+
+        switch (randomNum[11]) {
+            case (5):
+                Items.giveItem(Items.getLightningItem(), player);
+                break;
+            case (6):
+                Items.giveItem(Items.getExplosionItem(), player);
                 break;
         }
 

@@ -63,6 +63,8 @@ public class Items {
         godSwordMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godSwordMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
+        godSword.setItemMeta(godSwordMeta);
+
         return godSword;
     }
 
@@ -77,6 +79,8 @@ public class Items {
         godPickaxeMeta.addEnchant(Enchantment.DIG_SPEED, 35, true);
         godPickaxeMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godPickaxeMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+
+        godPickaxe.setItemMeta(godPickaxeMeta);
 
         return godPickaxe;
     }
@@ -95,6 +99,8 @@ public class Items {
         godAxeMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godAxeMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
+        godAxe.setItemMeta(godAxeMeta);
+
         return godAxe;
     }
 
@@ -109,6 +115,8 @@ public class Items {
         godShovelMeta.addEnchant(Enchantment.DIG_SPEED, 35, true);
         godShovelMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godShovelMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+
+        godShovel.setItemMeta(godShovelMeta);
 
         return godShovel;
     }
@@ -131,6 +139,8 @@ public class Items {
         godHelmetMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godHelmetMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
+        godHelmet.setItemMeta(godHelmetMeta);
+
         return godHelmet;
     }
 
@@ -150,6 +160,8 @@ public class Items {
         godChestPlateMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godChestPlateMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
+        godChestPlate.setItemMeta(godChestPlateMeta);
+
         return godChestPlate;
     }
 
@@ -168,6 +180,8 @@ public class Items {
         godLeggingMeta.addEnchant(Enchantment.THORNS, 4, true);
         godLeggingMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godLeggingMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
+
+        godLeggings.setItemMeta(godLeggingMeta);
 
         return godLeggings;
     }
@@ -190,6 +204,57 @@ public class Items {
         godBootsMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         godBootsMeta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
 
+        godBoots.setItemMeta(godBootsMeta);
+
         return godBoots;
     }
+
+    public static ItemStack getLightningItem() {
+
+        ItemStack lightningRod = new ItemStack(Material.BLAZE_ROD);
+        ItemMeta lightMeta = lightningRod.getItemMeta();
+
+        assert lightMeta != null;
+        lightMeta.setDisplayName(ChatColor.AQUA + "" + ChatColor.BOLD + "Lightning Rod");
+        List<String> lightLore = new ArrayList<String>();
+
+        lightLore.add("");
+        lightLore.add(ChatColor.GOLD + "Right Click to Strike Once");
+        lightLore.add(ChatColor.GOLD + "Left Click to Spam Lightning");
+        lightMeta.setLore(lightLore);
+
+        lightMeta.addEnchant(Enchantment.DURABILITY, 1000, true);
+        lightMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        lightMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+
+        lightningRod.setItemMeta(lightMeta);
+
+        return lightningRod;
+    }
+
+    public static ItemStack getExplosionItem() {
+
+        ItemStack explosionStar = new ItemStack(Material.FIREWORK_STAR);
+        ItemMeta boomMeta = explosionStar.getItemMeta();
+
+        assert boomMeta != null;
+        boomMeta.setDisplayName(ChatColor.AQUA + "" + ChatColor.BOLD + "Explosion Star");
+        List<String> boomLore = new ArrayList<String>();
+
+        boomLore.add("");
+        boomLore.add(ChatColor.GOLD + "Right Click to Explode Once");
+        boomLore.add(ChatColor.GOLD + "Left Click to Spam Explosions");
+        boomMeta.setLore(boomLore);
+
+        boomMeta.addEnchant(Enchantment.DURABILITY, 1000, true);
+        boomMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+        boomMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+
+        explosionStar.setItemMeta(boomMeta);
+
+        return explosionStar;
+
+    }
+
+
 }

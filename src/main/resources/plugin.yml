@@ -11,3 +11,9 @@ commands:
   getrrkit:
     description: Get a randomized pvp kit
     permission: russianroulette.getkit
+  getlightningitem:
+    description: Get the lightning rod item
+    permission: russianroulette.getlightningitem
+  getexplosionstar:
+    description: Get the explosion star item
+    permission: russianroulette.getexplosionitem
