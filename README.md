@@ -9,4 +9,4 @@ Please Report Bugs in the Issues tab with a log!
 
 ## How to Use
 You can use the commnad `/getrrbow` to get a bow that has a 1 in 6 chance of firing  
-You can also use `/getrrkit` to get a randomly generated PvP kit
+You can also use `/getrrkit` to get a randomly generated PvP kit and clear previous items in inventory
