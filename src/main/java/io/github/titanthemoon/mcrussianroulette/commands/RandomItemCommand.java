@@ -22,88 +22,127 @@ public class RandomItemCommand implements CommandExecutor {
         }
 
         player.getInventory().clear();
-        // Yandere Dev Moment
-        if (randomNum[0] == 0 || randomNum[0] == 1) {
-            Items.giveItem(new ItemStack(Material.WOODEN_SWORD), player);
-        } else if (randomNum[0] == 2 || randomNum[0] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_SWORD), player);
-        } else if (randomNum[0] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_SWORD), player);
-        } else if (randomNum[0] == 5) {
-            Items.giveItem(Items.getGodSword(), player);
+
+        switch (randomNum[0]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.WOODEN_SWORD), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_SWORD), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_SWORD), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodSword(), player);
+                break;
         }
 
-        if (randomNum[1] == 0 || randomNum[1] == 1) {
-            Items.giveItem(new ItemStack(Material.WOODEN_PICKAXE), player);
-        } else if (randomNum[1] == 2 || randomNum[1] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_PICKAXE), player);
-        } else if (randomNum[1] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_PICKAXE), player);
-        } else if (randomNum[1] == 5) {
-            Items.giveItem(Items.getGodPickaxe(), player);
+        switch (randomNum[1]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.WOODEN_PICKAXE), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_PICKAXE), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_PICKAXE), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodPickaxe(), player);
+                break;
         }
 
-        if (randomNum[2] == 0 || randomNum[2] == 1) {
-            Items.giveItem(new ItemStack(Material.WOODEN_AXE), player);
-        } else if (randomNum[2] == 2 || randomNum[2] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_AXE), player);
-        } else if (randomNum[2] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_AXE), player);
-        } else if (randomNum[2] == 5) {
-            Items.giveItem(Items.getGodAxe(), player);
+        switch (randomNum[2]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.WOODEN_AXE), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_AXE), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_AXE), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodAxe(), player);
+                break;
         }
 
-        if (randomNum[3] == 0 || randomNum[3] == 1) {
-            Items.giveItem(new ItemStack(Material.WOODEN_SHOVEL), player);
-        } else if (randomNum[3] == 2 || randomNum[3] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_SHOVEL), player);
-        } else if (randomNum[3] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_SHOVEL), player);
-        } else if (randomNum[3] == 5) {
-            Items.giveItem(Items.getGodShovel(), player);
+        switch (randomNum[3]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.WOODEN_SHOVEL), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_SHOVEL), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_SHOVEL), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodShovel(), player);
+                break;
         }
 
         Items.giveItem(Items.getRussianRouletteBow(), player);
 
-        // More Yandere Dev Moments
-        if (randomNum[4] == 0 || randomNum[4] == 1) {
-            Items.giveItem(new ItemStack(Material.LEATHER_HELMET), player);
-        } else if (randomNum[4] == 2 || randomNum[3] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_HELMET), player);
-        } else if (randomNum[4] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_HELMET), player);
-        } else if (randomNum[4] == 5) {
-            Items.giveItem(Items.getGodHelmet(), player);
+        switch (randomNum[4]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.LEATHER_HELMET), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_HELMET), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_HELMET), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodHelmet(), player);
+                break;
         }
 
-        if (randomNum[5] == 0 || randomNum[5] == 1) {
-            Items.giveItem(new ItemStack(Material.LEATHER_CHESTPLATE), player);
-        } else if (randomNum[5] == 2 || randomNum[5] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_CHESTPLATE), player);
-        } else if (randomNum[5] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_CHESTPLATE), player);
-        } else if (randomNum[5] == 5) {
-            Items.giveItem(Items.getGodChestPlate(), player);
+        switch (randomNum[5]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.LEATHER_CHESTPLATE), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_CHESTPLATE), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_CHESTPLATE), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodChestPlate(), player);
+                break;
         }
 
-        if (randomNum[6] == 0 || randomNum[6] == 1) {
-            Items.giveItem(new ItemStack(Material.LEATHER_LEGGINGS), player);
-        } else if (randomNum[6] == 2 || randomNum[6] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_LEGGINGS), player);
-        } else if (randomNum[6] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_LEGGINGS), player);
-        } else if (randomNum[6] == 5) {
-            Items.giveItem(Items.getGodLeggings(), player);
+        switch (randomNum[6]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.LEATHER_LEGGINGS), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_LEGGINGS), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_LEGGINGS), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodLeggings(), player);
+                break;
         }
 
-        if (randomNum[7] == 0 || randomNum[7] == 1) {
-            Items.giveItem(new ItemStack(Material.LEATHER_BOOTS), player);
-        } else if (randomNum[7] == 2 || randomNum[7] == 3) {
-            Items.giveItem(new ItemStack(Material.IRON_BOOTS), player);
-        } else if (randomNum[7] == 4) {
-            Items.giveItem(new ItemStack(Material.DIAMOND_BOOTS), player);
-        } else if (randomNum[7] == 5) {
-            Items.giveItem(Items.getGodBoots(), player);
+        switch (randomNum[7]) {
+            case (2):
+                Items.giveItem(new ItemStack(Material.LEATHER_BOOTS), player);
+                break;
+            case (3):
+                Items.giveItem(new ItemStack(Material.IRON_BOOTS), player);
+                break;
+            case (4):
+                Items.giveItem(new ItemStack(Material.DIAMOND_BOOTS), player);
+                break;
+            case (5):
+                Items.giveItem(Items.getGodBoots(), player);
+                break;
         }
 
         switch (randomNum[8]) {
@@ -149,10 +188,10 @@ public class RandomItemCommand implements CommandExecutor {
         }
 
         switch (randomNum[11]) {
-            case (5):
+            case (4):
                 Items.giveItem(Items.getLightningItem(), player);
                 break;
-            case (6):
+            case (5):
                 Items.giveItem(Items.getExplosionItem(), player);
                 break;
         }
